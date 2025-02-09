@@ -10,6 +10,11 @@ public class Student
     public string Name { get; private set; }
     public int BirthMonth { get; private set; }
     public int Birthday { get; private set; }
+    // Overriding the ToString method
+    public override string ToString()
+    {
+        return $"Student {Name}, was born in month {BirthMonth}, and his birthday is: {Birthday}";
+    }
 
     // Constructor
     public Student(string name, int birthMonth, int birthday)
@@ -17,6 +22,7 @@ public class Student
         Name = name;
         BirthMonth = birthMonth;
         Birthday = birthday;
+
     }
 }
 

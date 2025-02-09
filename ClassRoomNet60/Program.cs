@@ -10,13 +10,17 @@
         };
 
         // Adding myself and my classmates to the class
-        myClass.StudentList.Add(new Student("Amir", 5, 99));  // Myself
-        myClass.StudentList.Add(new Student("Sameet", 2, 00)); // Classmate 1
-        myClass.StudentList.Add(new Student("Hasnain", 6, 04)); // Classmate 2
+        myClass.StudentList.Add(new Student("Amir", 5, 1999));  // Myself
+        myClass.StudentList.Add(new Student("Samet", 2, 20000)); // Classmate 1
+        myClass.StudentList.Add(new Student("Hasnain", 6, 2004)); // Classmate 2
 
         // Printing out the class name and semester start date
         Console.WriteLine($"Class name: {myClass.ClassName}");
         Console.WriteLine($"Semester Start: {myClass.SemesterStart.ToShortDateString()}");
-        Console.WriteLine($"Students ´near me: {myClass.StudentList");
+        // Printing out the students in the class
+        foreach (Student s in myClass.StudentList)
+        {
+            Console.WriteLine(s);
+        }
     }
 }

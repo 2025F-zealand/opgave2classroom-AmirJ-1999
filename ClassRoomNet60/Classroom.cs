@@ -10,7 +10,7 @@ public class ClassRoom
     // Constructor
     public ClassRoom()
     {
-        ClassName = "Shababs klassen";
+        ClassName = "3B";
         StudentList = new List<Student>();
         SemesterStart = DateTime.Now; // Current date and time
     }
